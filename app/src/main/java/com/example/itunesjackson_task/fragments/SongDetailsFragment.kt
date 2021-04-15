@@ -1,6 +1,5 @@
 package com.example.itunesjackson_task.fragments
 
-import android.media.AudioManager
 import android.media.MediaPlayer
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -58,8 +57,6 @@ class SongDetailsFragment : Fragment() {
             .load(data.artworkUrl100)
             .diskCacheStrategy(DiskCacheStrategy.DATA)
             .into(artwork)
-
-//        mediaPlayer.setAudioAttributes(AudioManager.STREAM_MUSIC)
 
         play_btn.setOnClickListener {
             if (!mediaPlayer.isPlaying) {
