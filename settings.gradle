@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "ItunesJackson_task"

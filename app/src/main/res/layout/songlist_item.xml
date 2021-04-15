@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/artwork"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        tools:src="@color/colorPrimary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/collectionName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="start"
+        android:maxLines="2"
+        android:paddingTop="8dp"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:textColor="#000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/artwork"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Michael Jackson: The Final Years: A Selection from Michael Jackson: The Magic, The Madness, The Whole Story, 1958-2009 (Unabridged)" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/artistName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:maxLines="1"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:textColor="#636262"
+        app:layout_constraintStart_toEndOf="@+id/artwork"
+        app:layout_constraintTop_toBottomOf="@+id/collectionName"
+        tools:text="by J. Randy Taraborrelli" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/songPrice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:textStyle="bold"
+        android:paddingBottom="8dp"
+        android:paddingEnd="8dp"
+        android:textSize="16sp"
+        android:textColor="#0CEC0C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:text="$ 8.99" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
